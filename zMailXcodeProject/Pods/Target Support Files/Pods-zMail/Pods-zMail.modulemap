@@ -1,0 +1,6 @@
+framework module Pods_zMail {
+  umbrella header "Pods-zMail-umbrella.h"
+
+  export *
+  module * { export * }
+}

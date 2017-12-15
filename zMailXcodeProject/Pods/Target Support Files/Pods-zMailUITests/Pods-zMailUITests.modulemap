@@ -1,0 +1,6 @@
+framework module Pods_zMailUITests {
+  umbrella header "Pods-zMailUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

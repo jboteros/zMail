@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CA8D2CECDADC4482679F2B4 /* Pods_zMailUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2217B4C4DF53AECAF4DA7EC0 /* Pods_zMailUITests.framework */; };
+		1A67C893302BB4B19C495976 /* Pods_zMailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CF000796C994792503F348C /* Pods_zMailTests.framework */; };
+		88226017D6942FED98D78693 /* Pods_zMail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A417373E64A45CB74201D6 /* Pods_zMail.framework */; };
+		9F388D7D1FE3515D00AB21C3 /* dataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F388D7C1FE3515D00AB21C3 /* dataClass.swift */; };
+		9F388D7F1FE353D000AB21C3 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F388D7E1FE353D000AB21C3 /* Globals.swift */; };
+		9F388D821FE38ADA00AB21C3 /* MessagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F388D801FE38ADA00AB21C3 /* MessagesTableViewCell.swift */; };
+		9F388D831FE38ADA00AB21C3 /* MessagesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F388D811FE38ADA00AB21C3 /* MessagesTableViewCell.xib */; };
+		9FFF3E5F1FE340DD001D7661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF3E5E1FE340DD001D7661 /* AppDelegate.swift */; };
+		9FFF3E611FE340DD001D7661 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF3E601FE340DD001D7661 /* ViewController.swift */; };
+		9FFF3E641FE340DD001D7661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFF3E621FE340DD001D7661 /* Main.storyboard */; };
+		9FFF3E661FE340DD001D7661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFF3E651FE340DD001D7661 /* Assets.xcassets */; };
+		9FFF3E691FE340DD001D7661 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFF3E671FE340DD001D7661 /* LaunchScreen.storyboard */; };
+		9FFF3E741FE340DD001D7661 /* zMailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF3E731FE340DD001D7661 /* zMailTests.swift */; };
+		9FFF3E7F1FE340DD001D7661 /* zMailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF3E7E1FE340DD001D7661 /* zMailUITests.swift */; };
+		9FFF3E8D1FE3452E001D7661 /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF3E8C1FE3452E001D7661 /* MessagesController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FFF3E701FE340DD001D7661 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FFF3E531FE340DD001D7661 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FFF3E5A1FE340DD001D7661;
+			remoteInfo = zMail;
+		};
+		9FFF3E7B1FE340DD001D7661 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FFF3E531FE340DD001D7661 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FFF3E5A1FE340DD001D7661;
+			remoteInfo = zMail;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16CCA51991F7C9350AC056CD /* Pods-zMail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zMail.release.xcconfig"; path = "Pods/Target Support Files/Pods-zMail/Pods-zMail.release.xcconfig"; sourceTree = "<group>"; };
+		17DF29DACB9364B73437576A /* Pods-zMail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zMail.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zMail/Pods-zMail.debug.xcconfig"; sourceTree = "<group>"; };
+		2217B4C4DF53AECAF4DA7EC0 /* Pods_zMailUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zMailUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41A3281913B5BDE7A24A88BD /* Pods-zMailUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zMailUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-zMailUITests/Pods-zMailUITests.release.xcconfig"; sourceTree = "<group>"; };
+		43C0A2FFFD1BF73761503923 /* Pods-zMailUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zMailUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zMailUITests/Pods-zMailUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		49A417373E64A45CB74201D6 /* Pods_zMail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zMail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF000796C994792503F348C /* Pods_zMailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zMailTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F388D7C1FE3515D00AB21C3 /* dataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataClass.swift; sourceTree = "<group>"; };
+		9F388D7E1FE353D000AB21C3 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		9F388D801FE38ADA00AB21C3 /* MessagesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewCell.swift; sourceTree = "<group>"; };
+		9F388D811FE38ADA00AB21C3 /* MessagesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessagesTableViewCell.xib; sourceTree = "<group>"; };
+		9FFF3E5B1FE340DD001D7661 /* zMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FFF3E5E1FE340DD001D7661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FFF3E601FE340DD001D7661 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FFF3E631FE340DD001D7661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9FFF3E651FE340DD001D7661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FFF3E681FE340DD001D7661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FFF3E6A1FE340DD001D7661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FFF3E6F1FE340DD001D7661 /* zMailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zMailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FFF3E731FE340DD001D7661 /* zMailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zMailTests.swift; sourceTree = "<group>"; };
+		9FFF3E751FE340DD001D7661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FFF3E7A1FE340DD001D7661 /* zMailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zMailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FFF3E7E1FE340DD001D7661 /* zMailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zMailUITests.swift; sourceTree = "<group>"; };
+		9FFF3E801FE340DD001D7661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FFF3E8C1FE3452E001D7661 /* MessagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
+		BAE738061C1ADF7B09F747D0 /* Pods-zMailTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zMailTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-zMailTests/Pods-zMailTests.release.xcconfig"; sourceTree = "<group>"; };
+		D7A705F5767F3BF9E43B68CC /* Pods-zMailTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zMailTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zMailTests/Pods-zMailTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FFF3E581FE340DD001D7661 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88226017D6942FED98D78693 /* Pods_zMail.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FFF3E6C1FE340DD001D7661 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A67C893302BB4B19C495976 /* Pods_zMailTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FFF3E771FE340DD001D7661 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CA8D2CECDADC4482679F2B4 /* Pods_zMailUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		165AD5BA81DEC152287D12BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17DF29DACB9364B73437576A /* Pods-zMail.debug.xcconfig */,
+				16CCA51991F7C9350AC056CD /* Pods-zMail.release.xcconfig */,
+				D7A705F5767F3BF9E43B68CC /* Pods-zMailTests.debug.xcconfig */,
+				BAE738061C1ADF7B09F747D0 /* Pods-zMailTests.release.xcconfig */,
+				43C0A2FFFD1BF73761503923 /* Pods-zMailUITests.debug.xcconfig */,
+				41A3281913B5BDE7A24A88BD /* Pods-zMailUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9FFF3E521FE340DD001D7661 = {
+			isa = PBXGroup;
+			children = (
+				9FFF3E5D1FE340DD001D7661 /* zMail */,
+				9FFF3E721FE340DD001D7661 /* zMailTests */,
+				9FFF3E7D1FE340DD001D7661 /* zMailUITests */,
+				9FFF3E5C1FE340DD001D7661 /* Products */,
+				165AD5BA81DEC152287D12BE /* Pods */,
+				AF56781E3D844AA11C5D2165 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9FFF3E5C1FE340DD001D7661 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FFF3E5B1FE340DD001D7661 /* zMail.app */,
+				9FFF3E6F1FE340DD001D7661 /* zMailTests.xctest */,
+				9FFF3E7A1FE340DD001D7661 /* zMailUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FFF3E5D1FE340DD001D7661 /* zMail */ = {
+			isa = PBXGroup;
+			children = (
+				9FFF3E5E1FE340DD001D7661 /* AppDelegate.swift */,
+				9FFF3E601FE340DD001D7661 /* ViewController.swift */,
+				9F388D801FE38ADA00AB21C3 /* MessagesTableViewCell.swift */,
+				9F388D811FE38ADA00AB21C3 /* MessagesTableViewCell.xib */,
+				9FFF3E621FE340DD001D7661 /* Main.storyboard */,
+				9FFF3E651FE340DD001D7661 /* Assets.xcassets */,
+				9FFF3E671FE340DD001D7661 /* LaunchScreen.storyboard */,
+				9FFF3E6A1FE340DD001D7661 /* Info.plist */,
+				9FFF3E8C1FE3452E001D7661 /* MessagesController.swift */,
+				9F388D7C1FE3515D00AB21C3 /* dataClass.swift */,
+				9F388D7E1FE353D000AB21C3 /* Globals.swift */,
+			);
+			path = zMail;
+			sourceTree = "<group>";
+		};
+		9FFF3E721FE340DD001D7661 /* zMailTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FFF3E731FE340DD001D7661 /* zMailTests.swift */,
+				9FFF3E751FE340DD001D7661 /* Info.plist */,
+			);
+			path = zMailTests;
+			sourceTree = "<group>";
+		};
+		9FFF3E7D1FE340DD001D7661 /* zMailUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9FFF3E7E1FE340DD001D7661 /* zMailUITests.swift */,
+				9FFF3E801FE340DD001D7661 /* Info.plist */,
+			);
+			path = zMailUITests;
+			sourceTree = "<group>";
+		};
+		AF56781E3D844AA11C5D2165 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49A417373E64A45CB74201D6 /* Pods_zMail.framework */,
+				7CF000796C994792503F348C /* Pods_zMailTests.framework */,
+				2217B4C4DF53AECAF4DA7EC0 /* Pods_zMailUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FFF3E5A1FE340DD001D7661 /* zMail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FFF3E831FE340DD001D7661 /* Build configuration list for PBXNativeTarget "zMail" */;
+			buildPhases = (
+				CB5C4A8D33D10252DC538CEC /* [CP] Check Pods Manifest.lock */,
+				9FFF3E571FE340DD001D7661 /* Sources */,
+				9FFF3E581FE340DD001D7661 /* Frameworks */,
+				9FFF3E591FE340DD001D7661 /* Resources */,
+				E76C512678F48FF3E361ABDB /* [CP] Embed Pods Frameworks */,
+				A306A9EC1C6CB7AC13759068 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zMail;
+			productName = zMail;
+			productReference = 9FFF3E5B1FE340DD001D7661 /* zMail.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FFF3E6E1FE340DD001D7661 /* zMailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FFF3E861FE340DD001D7661 /* Build configuration list for PBXNativeTarget "zMailTests" */;
+			buildPhases = (
+				A29B0B952680B39A9BB81735 /* [CP] Check Pods Manifest.lock */,
+				9FFF3E6B1FE340DD001D7661 /* Sources */,
+				9FFF3E6C1FE340DD001D7661 /* Frameworks */,
+				9FFF3E6D1FE340DD001D7661 /* Resources */,
+				34D02EF8D285C7DEB693739C /* [CP] Embed Pods Frameworks */,
+				2A8C32F15E1A452DC307147A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FFF3E711FE340DD001D7661 /* PBXTargetDependency */,
+			);
+			name = zMailTests;
+			productName = zMailTests;
+			productReference = 9FFF3E6F1FE340DD001D7661 /* zMailTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9FFF3E791FE340DD001D7661 /* zMailUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FFF3E891FE340DD001D7661 /* Build configuration list for PBXNativeTarget "zMailUITests" */;
+			buildPhases = (
+				EBD3261E278AC78C2AB206CE /* [CP] Check Pods Manifest.lock */,
+				9FFF3E761FE340DD001D7661 /* Sources */,
+				9FFF3E771FE340DD001D7661 /* Frameworks */,
+				9FFF3E781FE340DD001D7661 /* Resources */,
+				2A18B2195D45D2BED4E51C1B /* [CP] Embed Pods Frameworks */,
+				2A27D18EEE7740763262F2B9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FFF3E7C1FE340DD001D7661 /* PBXTargetDependency */,
+			);
+			name = zMailUITests;
+			productName = zMailUITests;
+			productReference = 9FFF3E7A1FE340DD001D7661 /* zMailUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FFF3E531FE340DD001D7661 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Johnatan Botero";
+				TargetAttributes = {
+					9FFF3E5A1FE340DD001D7661 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					9FFF3E6E1FE340DD001D7661 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9FFF3E5A1FE340DD001D7661;
+					};
+					9FFF3E791FE340DD001D7661 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9FFF3E5A1FE340DD001D7661;
+					};
+				};
+			};
+			buildConfigurationList = 9FFF3E561FE340DD001D7661 /* Build configuration list for PBXProject "zMail" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FFF3E521FE340DD001D7661;
+			productRefGroup = 9FFF3E5C1FE340DD001D7661 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FFF3E5A1FE340DD001D7661 /* zMail */,
+				9FFF3E6E1FE340DD001D7661 /* zMailTests */,
+				9FFF3E791FE340DD001D7661 /* zMailUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FFF3E591FE340DD001D7661 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FFF3E691FE340DD001D7661 /* LaunchScreen.storyboard in Resources */,
+				9F388D831FE38ADA00AB21C3 /* MessagesTableViewCell.xib in Resources */,
+				9FFF3E661FE340DD001D7661 /* Assets.xcassets in Resources */,
+				9FFF3E641FE340DD001D7661 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FFF3E6D1FE340DD001D7661 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FFF3E781FE340DD001D7661 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A18B2195D45D2BED4E51C1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zMailUITests/Pods-zMailUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A27D18EEE7740763262F2B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zMailUITests/Pods-zMailUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A8C32F15E1A452DC307147A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zMailTests/Pods-zMailTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34D02EF8D285C7DEB693739C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zMailTests/Pods-zMailTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A29B0B952680B39A9BB81735 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A306A9EC1C6CB7AC13759068 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zMail/Pods-zMail-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB5C4A8D33D10252DC538CEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E76C512678F48FF3E361ABDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zMail/Pods-zMail-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBD3261E278AC78C2AB206CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FFF3E571FE340DD001D7661 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FFF3E611FE340DD001D7661 /* ViewController.swift in Sources */,
+				9F388D821FE38ADA00AB21C3 /* MessagesTableViewCell.swift in Sources */,
+				9F388D7F1FE353D000AB21C3 /* Globals.swift in Sources */,
+				9F388D7D1FE3515D00AB21C3 /* dataClass.swift in Sources */,
+				9FFF3E5F1FE340DD001D7661 /* AppDelegate.swift in Sources */,
+				9FFF3E8D1FE3452E001D7661 /* MessagesController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FFF3E6B1FE340DD001D7661 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FFF3E741FE340DD001D7661 /* zMailTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FFF3E761FE340DD001D7661 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FFF3E7F1FE340DD001D7661 /* zMailUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FFF3E711FE340DD001D7661 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FFF3E5A1FE340DD001D7661 /* zMail */;
+			targetProxy = 9FFF3E701FE340DD001D7661 /* PBXContainerItemProxy */;
+		};
+		9FFF3E7C1FE340DD001D7661 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FFF3E5A1FE340DD001D7661 /* zMail */;
+			targetProxy = 9FFF3E7B1FE340DD001D7661 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9FFF3E621FE340DD001D7661 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FFF3E631FE340DD001D7661 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9FFF3E671FE340DD001D7661 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FFF3E681FE340DD001D7661 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FFF3E811FE340DD001D7661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FFF3E821FE340DD001D7661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FFF3E841FE340DD001D7661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17DF29DACB9364B73437576A /* Pods-zMail.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P59ZNH6U6;
+				INFOPLIST_FILE = zMail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jbotero.zMail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		9FFF3E851FE340DD001D7661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16CCA51991F7C9350AC056CD /* Pods-zMail.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P59ZNH6U6;
+				INFOPLIST_FILE = zMail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jbotero.zMail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		9FFF3E871FE340DD001D7661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7A705F5767F3BF9E43B68CC /* Pods-zMailTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P59ZNH6U6;
+				INFOPLIST_FILE = zMailTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jbotero.zMailTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zMail.app/zMail";
+			};
+			name = Debug;
+		};
+		9FFF3E881FE340DD001D7661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAE738061C1ADF7B09F747D0 /* Pods-zMailTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P59ZNH6U6;
+				INFOPLIST_FILE = zMailTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jbotero.zMailTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zMail.app/zMail";
+			};
+			name = Release;
+		};
+		9FFF3E8A1FE340DD001D7661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43C0A2FFFD1BF73761503923 /* Pods-zMailUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P59ZNH6U6;
+				INFOPLIST_FILE = zMailUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jbotero.zMailUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = zMail;
+			};
+			name = Debug;
+		};
+		9FFF3E8B1FE340DD001D7661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A3281913B5BDE7A24A88BD /* Pods-zMailUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7P59ZNH6U6;
+				INFOPLIST_FILE = zMailUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jbotero.zMailUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = zMail;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FFF3E561FE340DD001D7661 /* Build configuration list for PBXProject "zMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FFF3E811FE340DD001D7661 /* Debug */,
+				9FFF3E821FE340DD001D7661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FFF3E831FE340DD001D7661 /* Build configuration list for PBXNativeTarget "zMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FFF3E841FE340DD001D7661 /* Debug */,
+				9FFF3E851FE340DD001D7661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FFF3E861FE340DD001D7661 /* Build configuration list for PBXNativeTarget "zMailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FFF3E871FE340DD001D7661 /* Debug */,
+				9FFF3E881FE340DD001D7661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FFF3E891FE340DD001D7661 /* Build configuration list for PBXNativeTarget "zMailUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FFF3E8A1FE340DD001D7661 /* Debug */,
+				9FFF3E8B1FE340DD001D7661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FFF3E531FE340DD001D7661 /* Project object */;
+}
